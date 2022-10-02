@@ -1,0 +1,49 @@
+*{
+    font-family: 'Poppins';
+}
+.ToolContianer{
+    
+}
+.ToolContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 70vh;
+
+}
+
+.Tool{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    /* line-height: 72px; */
+    color: #0038FF;
+    line-height: 7rem;
+}
+.ToolsImages{
+    /* gap: 5rem; */
+    /* border: 3px solid red ; */
+}
+
+@media screen and (max-width:768px)
+{
+    .ToolContent{
+        height: 50vh;
+    }
+}
+@media screen and (max-width:550px)
+{
+    .ToolContent{
+        height: 100vh;
+    }
+}
+@media (min-width:320px) and (max-width:549px)
+{
+    .ToolContent{
+        height: auto;
+        /* border: 2px solid red; */
+    }
+}

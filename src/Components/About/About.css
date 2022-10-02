@@ -1,0 +1,519 @@
+.About__Portion {
+    display: flex;
+    width: 100%
+}
+
+.lettSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 91vh;
+    flex-wrap: wrap;
+
+}
+
+
+
+.Description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+    height: 50%;
+    flex: none;
+    /* order: 1; */
+    flex-grow: 0;
+}
+
+.welcome {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.586px;
+    line-height: 34px;
+    color: rgba(0, 56, 255, 0.5);
+}
+
+.Sajid {
+
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 86px;
+    color: #0038FF;
+}
+
+.developer {
+    color: #FC9700;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+
+    line-height: 86px;
+}
+
+.description__lorem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.2619px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 27%;
+}
+
+.LOrem {
+    font-size: large;
+}
+
+.buttons_area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+
+    line-height: 62px;
+    width: 60%;
+}
+
+.buttons__portion {
+    display: flex;
+    width: 92%;
+    gap: 50px;
+}
+
+.button1 {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: #0038FF;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    width: 100%;
+    border-radius: 10px;
+    height: 51px;
+
+
+}
+
+.button2 {
+
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: #0038FF;
+    ;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: white;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    box-shadow: 0px 3.61376px 3.61376px rgba(0, 0, 0, 0.25);
+    border-radius: 15;
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    -ms-border-radius: 15;
+    -o-border-radius: 15;
+    width: 100%;
+    border-radius: 10px;
+    height: 51px;
+
+}
+
+
+.buttons__portion>button:nth-child(1) {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: #0038FF;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+button:nth-child(1)::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #000000;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+button:nth-child(1):hover {
+    cursor: pointer;
+    color: white;
+}
+
+button:nth-child(1):hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.buttons__portion>button:nth-child(2) {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: #0038FF;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: white;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    box-shadow: 0px 3.61376px 3.61376px rgba(0, 0, 0, 0.25);
+    border-radius: 15;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.2619px;
+
+    letter-spacing: 0.03em;
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    -ms-border-radius: 15;
+    -o-border-radius: 15;
+}
+
+button:nth-child(2)::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: rgb(22, 210, 235);
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+button:nth-child(2)button:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+button:nth-child(2):hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+@media screen and (max-width1316px) {}
+
+
+/* --------------------------------- Ride side -------------------------------- */
+.rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 91vh;
+    /* border: 3px solid black; */
+}
+
+.RightSideContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 74vh;
+    /* border: 3px solid yellow; */
+}
+
+.picBackground {
+    /* border: 2px solid red; */
+    background: rgba(74, 143, 246, 0.29);
+    border-radius: 0px 0px 0px 217.729px;
+    width: 60%;
+    height: 60vh;
+    position: relative;
+}
+
+.pictureDiv {
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-radius: 0px 0px 0px 217.729px;
+}
+
+.pic {
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    border-radius: 0px 0px 0px 217.729px;
+}
+
+
+/* -------------------------- For Responsivness ------------------------------ */
+
+@media screen and (max-width:1398px) {
+    .buttons__portion {
+        display: flex;
+        width: 100%;
+        /* gap: 50px; */
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .Sajid {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 70px;
+        color: #0038FF;
+    }
+
+    .developer {
+        color: #FC9700;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 70px;
+    }
+
+
+    .Description {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 60%;
+        height: auto;
+        flex: none;
+        /* order: 1; */
+        flex-grow: 0;
+    }
+
+
+
+    .buttons__portion {
+        display: flex;
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+
+
+
+@media screen and (min-width: 700px) and (max-width:1320px) {
+    .Sajid {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 55px;
+        color: #0038FF;
+    }
+
+    .buttons_area {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10%;
+        line-height: 62px;
+        width: 100%;
+    }
+
+    .buttons__portion {
+        display: flex;
+        width: 80%;
+        /* gap: 50px; */
+    }
+
+}
+
+@media (max-width: 806px) {
+    .developer {
+        color: #FC9700;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 70px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .Sajid {
+        font-size: 2rem;
+    }
+
+    .About__Portion {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .developer {
+        color: #FC9700;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 70px;
+    }
+
+    .RightSideContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 74vh;
+        /* border: 3px solid yellow; */
+    }
+
+    .rightSide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+
+    }
+
+    .lettSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        height: 49vh;
+        flex-wrap: wrap;
+    }
+
+    .buttons_area {
+        height: 24%;
+        width: 60%;
+    }
+
+    .pic {
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 30px;
+        border-radius: 212px 212px 212px 212px;
+    }
+
+    .picBackground {
+        /* border: 2px solid red; */
+        background: none;
+        border-radius: 0px 0px 0px 217.729px;
+        width: 60%;
+        height: 60vh;
+        position: relative;
+    }
+
+    .pictureDiv {
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0px 0px 0px 217.729px;
+    }
+}
+
+@media (max-width:512px) {
+    .Sajid {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 55px;
+        color: #0038FF;
+    }
+
+    .buttons_area {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10%;
+        line-height: 62px;
+        width: 100%;
+    }
+
+    .buttons__portion {
+        display: flex;
+        width: 70%;
+        height: 20%;
+    }
+}
+
+@media (max-width:414px) {
+    .lettSide {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 65vh;
+    }
+    
+    .picBackground{
+        background: none;
+        height: 44vh;
+    }
+    .pictureDiv{
+        height: auto;
+    }
+    .pic{
+        width: 73vw;
+        height: 42vh;
+    }
+}
+
+@media (min-width: 300px) and (max-screen: 414px)
+{
+    .lettSide {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 65vh;
+    }
+    
+    .picBackground{
+        background: none;
+        height: 44vh;
+    }
+    .pictureDiv{
+        height: auto;
+    }
+    .pic{
+        width: 73vw;
+        height: 42vh;
+    }
+    
+     
+}

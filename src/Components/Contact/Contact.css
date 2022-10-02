@@ -1,0 +1,131 @@
+.Contact__Container {}
+
+
+.Contact__Portion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 4rem;
+}
+
+
+.Contact__Data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Get {
+    display: flex;
+    gap: 2rem;
+    color: #0038FF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 10rem;
+}
+
+.Icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.call {
+    color: #0038FF;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-style: normal;
+
+}
+
+.number {
+    color: rgba(0, 56, 255, 0.51);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.Form__Container {
+    /* border: 3px solid red; */
+    height: 80vh;
+
+}
+
+.Form__Portion {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Form__input {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.Form__Name {
+    border: none;
+    width: 35%;
+    line-height: 4;
+    background: rgba(0, 0, 0, 0.28);
+}
+
+.Form__text {}
+
+.TextArea {
+    padding: 20px;
+    width: 81%;
+    background: rgba(0, 0, 0, 0.28);
+    border: none;
+
+}
+
+.For__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Send__Btn {
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    background: #0038FF;
+    box-shadow: -47px 54px 28px rgba(1, 5, 121, 0.01), -26px 30px 24px rgba(1, 5, 121, 0.05), -12px 13px 18px rgba(1, 5, 121, 0.09), -3px 3px 10px rgba(1, 5, 121, 0.1), 0px 0px 0px rgba(1, 5, 121, 0.1);
+    border-radius: 41.0722px;
+    width: 10rem;
+    line-height: 3rem;
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .Icons {
+        display: flex;
+        flex-direction: column;
+    }
+}

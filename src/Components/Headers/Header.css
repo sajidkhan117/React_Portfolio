@@ -1,0 +1,200 @@
+.Header {
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    /* padding: 5px 0 5px 0 ; */
+    line-height: 30px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.586px;
+    line-height: 34px;
+    color: white;
+    position: fixed;
+
+
+}
+
+.Right {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+}
+
+.Right ul {
+    display: flex;
+    list-style: none;
+    gap: 119px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22.586px;
+    line-height: 34px;
+
+}
+
+.nav-links {
+    width: 50vw !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+
+.Togle {
+    display: none;
+}
+
+@media (max-width:1528px) {
+    .Left {
+        width: 25%;
+    }
+
+    /* .Right {
+        width: 68%;
+    } */
+
+}
+
+@media (max-width:1216px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Right ul {
+        gap: 100px;
+    }
+}
+
+@media (max-width:1110px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Right ul {
+        gap: 60px;
+    }
+}
+
+@media (max-width:930px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Left {
+        width: 30%;
+    }
+
+    .Right {
+        width: 95vw;
+
+    }
+}
+
+@media (max-width:890px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Right ul {
+        gap: 40px;
+    }
+}
+
+@media (max-width:782px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Right ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .Togle {
+        display: flex;
+    }
+
+
+    .Right2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .Right ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 90%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .Header2 {
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Left {
+        width: 40%;
+    }
+}
+
+@media (min-width: 286px) and (max-width:414px) {
+    .Togle {
+        display: flex;
+    }
+
+
+    .Right2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .Right ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 90%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .Header2 {
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Left {
+        width: 70%;
+    }
+}

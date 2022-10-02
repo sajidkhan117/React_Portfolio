@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.serviceHeading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    /* line-height: 72px; */
+    color: #0038FF;
+    line-height: 7rem;
+}
+
+.serviceLorem {
+    /* border: 3px solid aqua; */
+    height: 20vh;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.AllServices {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    width: 100%;
+    justify-content: center;
+    grid-gap: 2rem;
+
+
+
+}
+
+.item {
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.ForIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ServiceNames {
+    font-weight: bolder;
+    /* line-height: 1.5rem; */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .AllServices{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Service{
+        margin-top: 20px;
+    }
+
+    .AllServices{
+        display: grid;
+        grid-template-columns: repeat(1, 80%);
+        
+    }
+}
+
