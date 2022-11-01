@@ -18,7 +18,7 @@ const Headers = () => {
     <div className={open ? "Header Header2" : "Header"}>
     
 
-      <div className="Left">
+      <div className="LeftHeader">
         <div style={{cursor: "pointer"}} onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
         }}>

@@ -1,4 +1,6 @@
-.ProjectContianer {}
+.ProjectContianer {
+    box-sizing: border-box;
+}
 
 body {
     box-sizing: border-box;

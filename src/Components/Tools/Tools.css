@@ -10,7 +10,8 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    height: 70vh;
+    /* height: 70vh; */
+    height: auto;
 
 }
 
@@ -28,16 +29,26 @@
     /* border: 3px solid red ; */
 }
 
+
+@media (min-width:550px) and (max-width:686px)
+{
+    .ToolContent{
+        height: auto;
+        /* background-color: red; */
+        margin-top: 40px;
+    }
+}
+
 @media screen and (max-width:768px)
 {
     .ToolContent{
-        height: 50vh;
+        height: 71vh;
     }
 }
 @media screen and (max-width:550px)
 {
     .ToolContent{
-        height: 100vh;
+        height: auto;
     }
 }
 @media (min-width:320px) and (max-width:549px)

@@ -1,6 +1,12 @@
+.AboutContainer {
+    box-sizing: border-box;
+}
+
 .About__Portion {
     display: flex;
-    width: 100%
+
+    width: 100%;
+
 }
 
 .lettSide {
@@ -11,7 +17,9 @@
     width: 50%;
     height: 91vh;
     flex-wrap: wrap;
+    gap: 2rem;
 
+    margin-top: 40px;
 }
 
 
@@ -79,8 +87,8 @@
     align-items: center;
     height: 10%;
 
-    line-height: 62px;
-    width: 60%;
+    width: 40%;
+
 }
 
 .buttons__portion {
@@ -238,7 +246,9 @@ button:nth-child(2):hover::before {
     align-items: center;
     width: 50%;
     height: 91vh;
-    /* border: 3px solid black; */
+
+    margin-top: 40px;
+
 }
 
 .RightSideContainer {
@@ -412,8 +422,6 @@ button:nth-child(2):hover::before {
         justify-content: center;
         align-items: center;
         width: 100%;
-
-        height: 49vh;
         flex-wrap: wrap;
     }
 
@@ -449,7 +457,7 @@ button:nth-child(2):hover::before {
     }
 }
 
-@media (max-width:512px) {
+@media (min-width:512px) {
     .Sajid {
         font-weight: 700;
         font-size: 2rem;
@@ -471,6 +479,16 @@ button:nth-child(2):hover::before {
         width: 70%;
         height: 20%;
     }
+
+}
+
+@media (min-width:414px) and (max-width:561px) {
+    .lettSide {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
 }
 
 @media (max-width:414px) {
@@ -478,42 +496,62 @@ button:nth-child(2):hover::before {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 65vh;
+
     }
-    
-    .picBackground{
+
+    .picBackground {
         background: none;
         height: 44vh;
     }
-    .pictureDiv{
+
+    .pictureDiv {
         height: auto;
     }
-    .pic{
+
+    .pic {
         width: 73vw;
         height: 42vh;
     }
 }
 
-@media (min-width: 300px) and (max-screen: 414px)
-{
+@media (min-width: 300px) and (max-screen: 414px) {
     .lettSide {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 65vh;
+        /* height: 65vh; */
     }
-    
-    .picBackground{
+
+    .picBackground {
         background: none;
         height: 44vh;
     }
-    .pictureDiv{
+
+    .pictureDiv {
         height: auto;
     }
-    .pic{
+
+    .pic {
         width: 73vw;
         height: 42vh;
     }
-    
-     
+
+
+}
+
+@media screen and (max-width:320px) {
+    .lettSide {
+        display: flex;
+        gap: 2rem;
+        height: 100vh;
+    }
+    .buttons__portion {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+    }
+    .buttons__portion {
+        gap: 2rem;
+    }
 }

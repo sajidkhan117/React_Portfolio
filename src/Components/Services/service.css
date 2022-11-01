@@ -24,7 +24,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 21px;
     text-align: center;
     color: #000000;
     flex: none;
@@ -68,21 +68,20 @@
 
 
 @media screen and (max-width: 768px) {
-    .AllServices{
+    .AllServices {
         display: grid;
         grid-template-columns: repeat(2, 40%);
     }
 }
 
 @media screen and (max-width: 425px) {
-    .Service{
-        margin-top: 20px;
+    .Service {
+        margin-top: 100px;
     }
 
-    .AllServices{
+    .AllServices {
         display: grid;
         grid-template-columns: repeat(1, 80%);
-        
+
     }
 }
-

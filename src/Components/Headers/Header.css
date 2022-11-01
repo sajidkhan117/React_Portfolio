@@ -8,9 +8,10 @@
     background-color: black;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.Left {
+.LeftHeader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +59,7 @@
 }
 
 @media (max-width:1528px) {
-    .Left {
+    .LeftHeader {
         width: 25%;
     }
 
@@ -93,7 +94,7 @@
         width: 100%;
     }
 
-    .Left {
+    .LeftHeader {
         width: 30%;
     }
 
@@ -156,7 +157,7 @@
         height: 100vh;
     }
 
-    .Left {
+    .LeftHeader {
         width: 40%;
     }
 }
@@ -194,7 +195,7 @@
         height: 100vh;
     }
 
-    .Left {
+    .LeftHeader {
         width: 70%;
     }
 }

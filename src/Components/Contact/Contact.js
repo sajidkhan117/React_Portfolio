@@ -1,13 +1,23 @@
 
-import React  from "react";
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
 import "./Contact.css";
 const Contact = () => {
-  
 
-    const handleSubmit = (e) => {
-      e.preventDefault()
-    }
-  
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_jcsw48w', 'template_psob3wl', form.current, 'mM01tMrJnSyHYnhlF')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
+  }
+
   return (
     <div className="Contact__Container" id="Contact">
       <div className="Contact__Portion">
@@ -60,25 +70,26 @@ const Contact = () => {
       </div>
 
       <div className="Form__Container">
-        <form  onSubmit={handleSubmit}
-          className="Form__Portion" 
+        <form ref={form} onSubmit={handleSubmit}
+          className="Form__Portion"
           action="
         "
         >
           <div className="Form__input">
             <input
               type="text"
-              name=""
               id=""
-              placeholder="  Full Name"
+              name="name"
+              placeholder="Full Name"
               className="Form__Name"
+
               required
             />
             <input
               type="text"
-              name=""
+              name="email"
               id=""
-              placeholder="  Your Email"
+              placeholder="Your Email"
               className="Form__Name"
               required
 
@@ -86,19 +97,20 @@ const Contact = () => {
           </div>
           <div className="Form__text">
             <textarea className="TextArea"
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="10"
               placeholder=" your Message"
               required
-
-            ></textarea>
+              
+           / >
+           {/* <input type="submit" name="message" value="end" /> */}
 
           </div>
-          <div className="For__btn">
 
-             <button  type="submit" className="Send__Btn"> Send  Message</button>
+          <div className="For__btn">
+            <button type="submit" value="Send" className="Send__Btn"> Send  Message</button>
           </div>
         </form>
       </div>
